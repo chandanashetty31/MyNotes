@@ -1,17 +1,18 @@
 const express = require('express');
 const { Client } = require('pg');
 const cors = require('cors');
+const dotenv = require('dotenv');
 
 const app = express();
 app.use(express.json());
 app.use(cors());  // Enable cross-origin requests for your React app
-
+dotenv.config();
 // PostgreSQL client setup
 const client = new Client({
     user: "postgres",
     host: "localhost",
-    database: "mynotes",
-    password: "Astha@31",
+    database: process.env.DATABASE,
+    password: process.env.PASSWORD,
     port: 5432
 });
 
