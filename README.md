@@ -21,7 +21,7 @@ A full-stack Notes application built with React on the frontend and Node.js + Ex
 
 1. Clone the repo:
   
-   git clone https://github.com/yourusername/notes-app.git
+   git clone https://github.com/yourusername/notes-app.git <br>
    cd notes-app
 
 ## Install dependencies:
