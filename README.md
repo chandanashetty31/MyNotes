@@ -1,6 +1,6 @@
 # My Notes App ✍️
 
-A simple React app for creating, editing, and deleting notes. Built with Create React App.
+A full-stack Notes application built with React on the frontend and Node.js + Express + PostgreSQL on the backend. Allows users to create, edit, and delete notes.
 
 ## 🔧 Features
 
@@ -8,6 +8,7 @@ A simple React app for creating, editing, and deleting notes. Built with Create 
 - Edit existing notes
 - Delete notes with one click
 - Responsive UI with minimal styling
+- Backend data persistence using PostgreSQL
 
 ## 🛠️ Tech Stack
 
@@ -19,12 +20,24 @@ A simple React app for creating, editing, and deleting notes. Built with Create 
 ## 🚀 Getting Started
 
 1. Clone the repo:
-   ```bash
+  
    git clone https://github.com/yourusername/notes-app.git
    cd notes-app
 
 ## Install dependencies:
 npm install
+
+## Setup PostgreSQL
+
+Create a new database (e.g., notesdb) <br>
+
+Create a .env file in /server with your DB credentials: <br>
+
+DB_USER=your_username <br>
+DB_PASSWORD=your_password <br>
+DB_HOST=localhost <br>
+DB_PORT=5432 <br>
+DB_DATABASE=notesdb <br>
 
 ## Start the development server:
 npm start
